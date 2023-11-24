@@ -57,11 +57,13 @@ python train_mcfd.py
 ### Quantitative Results
 
 ![psnr_ssim](md_image/tables.png)
-![psnr_parameters](md_image/psnr_parameters.png)
+![psnr_ssim](md_image/pre_com.png)
 
-### Visual Results
 
-![vision](md_image/visual.png)
+
+### Comparison of noise resistance performance
+
+![vision](md_image/noise_com.png)
 
 
 ## Contact
@@ -72,5 +74,3 @@ If you have any question, please email [gongjy.cs@gmail.com](mailto:xxx@gmail.co
 ## Acknowledgements
 [TIP-CSNet](https://github.com/wzhshi/TIP-CSNet)
 [RK-CCSNet](https://github.com/rkteddy/RK-CCSNet)
-[FSOINet](https://github.com/cwjjun/fsoinet)
-[MR-CCSNet](https://github.com/fze0012/MR-CCSNet)
