@@ -31,7 +31,7 @@ We provide [pre-trained models (GoogleDrive)](https://drive.google.com/drive/fol
 1. Ensure the test dataset path in data_processor.py is correct
 2. Run the following scripts to test MCFD-Net model:
 ```
-python val.py --sensing-rate 0.015625/0.3125/0.0625/0.125/0.25/0.5
+python val.py --sensing-rate <0.015625/0.3125/0.0625/0.125/0.25/0.5>
 ```
 3. The default parameter configuration will evaluate the model with a perception rate of 0.5:
 ```
@@ -44,7 +44,7 @@ python val.py
 1. Ensure the train dataset path (train_40k) in data_processor.py is correct
 2. Run the following scripts to train MCFD-Net model:
 ```
-python train_mcfd.py --sensing-rate 0.015625/0.3125/0.0625/0.125/0.25/0.5 --epochs 200 --batch-size 6
+python train_mcfd.py --sensing-rate <0.015625/0.3125/0.0625/0.125/0.25/0.5> --epochs 100 --batch-size 4
 ```
 1. The default parameters for training are as follows: learning rate = 0.5, batch size = 6, and number of epochs = 200:
 ```
