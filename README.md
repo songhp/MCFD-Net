@@ -1,5 +1,7 @@
 # MCFD-Net
-Heping Song, Jingyao Gong, Hongying Meng, Yuping Lai. Multi-Cross Sampling and Frequency-Division Reconstruction for Image Compressed Sensing. AAAI 2024.
+Heping Song, Jingyao Gong, Hongying Meng, Yuping Lai. 
+Multi-Cross Sampling and Frequency-Division Reconstruction for Image Compressed Sensing. 
+AAAI 2024.
 
 
 
