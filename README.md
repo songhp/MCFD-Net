@@ -1,5 +1,7 @@
-# Multi-Cross Sampling and Frequency-Division Reconstruction for Image Compressed Sensing
-
+# MCFD-Net
+Heping Song, Jingyao Gong, Hongying Meng, Yuping Lai. 
+Multi-Cross Sampling and Frequency-Division Reconstruction for Image Compressed Sensing. 
+AAAI 2024.
 
 ## Abstract
 
@@ -8,8 +10,7 @@ To address the above issues, we propose MCFD Net, which employs a series of clev
 
 
 ## Network Architecture
-![structure](md_image/structure.png)
-
+![img.png](md_image/structure.png)
 
 ## Requirements
 - Python == 3.10.9
@@ -67,10 +68,25 @@ python train_mcfd.py
 
 
 ## Contact
-If you have any question, please email [gongjy.cs@gmail.com](mailto:xxx@gmail.com).
-
+If you have any question, please email [gongjy@stmail.ujs.edu.cn](mailto:gongjy@stmail.ujs.edu.cn).
 
 
 ## Acknowledgements
 [TIP-CSNet](https://github.com/wzhshi/TIP-CSNet)
 [RK-CCSNet](https://github.com/rkteddy/RK-CCSNet)
+[FSOINet](https://github.com/cwjjun/fsoinet)
+[MR-CCSNet](https://github.com/fze0012/MR-CCSNet)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
