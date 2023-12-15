@@ -21,7 +21,7 @@ def main():
         os.makedirs(args.save_dir)
         torch.backends.cudnn.benchmark = True
 
-    if args.model == 'mcfd':
+    if args.model == 'mcfdnet':
         model = mcfd.MCFD(sensing_rate=args.sensing_rate)
 
     if MULTI_GPU:
@@ -118,13 +118,13 @@ if __name__ == '__main__':
     device_nums = len(device_ids)
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model', type=str, default='transnewnet',
-                        choices=['transnewnet', 'transmrccsnet', 'mrccsnet', 'rkccsnet', 'csnet'],
+    parser.add_argument('--model', type=str, default='mcfdnet',
+                        choices=['mcfdnet', 'mrccsnet', 'rkccsnet', 'csnet'],
                         help='choose model to train')
     parser.add_argument('--sensing-rate', type=float, default=0.5,
                         choices=[0.50000, 0.25000, 0.12500, 0.06250, 0.03125, 0.015625],
                         help='set sensing rate')
-    parser.add_argument('--epochs', default=200, type=int, metavar='N',
+    parser.add_argument('--epochs', default=100, type=int, metavar='N',
                         help='number of total epochs to run')
     parser.add_argument('-b', '--batch-size', default=6 * device_nums, type=int,
                         metavar='N', help='mini-batch size (default: 128)')
@@ -140,13 +140,13 @@ if __name__ == '__main__':
 
     # main()
     args = parser.parse_args()
-    models = ['mcfd']
-    sensing_rates = [0.5]
+    models = ['mcfdnet']
+    sensing_rates = [0.50000, 0.25000, 0.12500]
+    # sensing_rates = [0.06250, 0.03125, 0.015625]
     for i in range(len(models)):
         for j in range(len(sensing_rates)):
             args.sensing_rate = sensing_rates[j]
             args.model = models[i]
-
             if MULTI_GPU:
                 print(device_nums, 'GPU Train cuda:', device_ids)
             else:

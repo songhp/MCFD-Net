@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader
 
 def data_loader(args, root='./', is_test=False):
     kwopt = {'num_workers': 8, 'pin_memory': True}
-    w_size, h_size = int(16*6), int(16*6)
+    w_size, h_size = int(16*8), int(16*8)
     trn_transforms = torchvision.transforms.Compose([
         torchvision.transforms.Resize((128, 128)),
         torchvision.transforms.RandomCrop(args.image_size),
@@ -30,7 +30,7 @@ def data_loader(args, root='./', is_test=False):
         torchvision.transforms.ToTensor(),
     ])
 
-    trn_dataset = torchvision.datasets.ImageFolder(root + 'dataset/BSDS200', transform=trn_transforms)
+    trn_dataset = torchvision.datasets.ImageFolder(root + 'dataset/train_80k', transform=trn_transforms)
     test_bsds = torchvision.datasets.ImageFolder(root + 'dataset/BSDS200', transform=test_bsds_transforms)
     test_set5 = torchvision.datasets.ImageFolder(root + 'dataset/set5', transform=test_set5_transforms)
     test_set14 = torchvision.datasets.ImageFolder(root + 'dataset/set14', transform=test_set14_transforms)
