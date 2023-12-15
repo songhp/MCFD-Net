@@ -19,12 +19,12 @@ To address the above issues, we propose MCFD Net, which employs a series of clev
 
 
 ## Datasets
-- Train data: [Train_Dataset (GoogleDrive)](https://drive.google.com/file/d/1zUPKz06AhH8zOJBZDtWsxyEHJMt5t-OK/view?usp=drive_link) from COCO 2014 dataset.
-- Test data: [Test_Dataset (GoogleDrive)](https://drive.google.com/file/d/1jCwa3PIinC1YtUK4uODCzkqtNl3Z1xjX/view) from Set5, Set11, BSDS200.
+- Train data: [Train Dataset](https://drive.google.com/file/d/1zUPKz06AhH8zOJBZDtWsxyEHJMt5t-OK/view) from COCO 2014 dataset.
+- Test data: [Test Dataset](https://drive.google.com/file/d/1jCwa3PIinC1YtUK4uODCzkqtNl3Z1xjX/view) from Set5, Set11, BSDS200.
 - You should decompress and place these datasets in the "./dataset/" directory.
 
 ## Pre training model
-We provide [pre-trained models (GoogleDrive)](https://drive.google.com/drive/folders/1N-B7NZI0HBHbkTbgZMvNczZpKsP6eDHO?usp=drive_link) for convenient evaluation. It contains six sampling rates.
+We provide [pre-trained weights](https://drive.google.com/drive/folders/1N-B7NZI0HBHbkTbgZMvNczZpKsP6eDHO) for convenient evaluation. It contains six sampling rates.
 
 ## How To Run
 
