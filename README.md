@@ -12,7 +12,7 @@ To address the above issues, we propose MCFD Net, which employs a series of clev
 ## Network Architecture
 ![img.png](md_image/structure.png)
 
-## Requirements
+## Requirements (recommend)
 - Python == 3.10.9
 - Pytorch == 1.13.0
 - Numpy == 1.16.4
