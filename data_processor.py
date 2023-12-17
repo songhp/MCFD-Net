@@ -34,7 +34,7 @@ def data_loader(args, root='./', is_test=False):
     test_bsds = torchvision.datasets.ImageFolder(root + 'dataset/BSDS200', transform=test_bsds_transforms)
     test_set5 = torchvision.datasets.ImageFolder(root + 'dataset/set5', transform=test_set5_transforms)
     test_set14 = torchvision.datasets.ImageFolder(root + 'dataset/set14', transform=test_set14_transforms)
-    compare = torchvision.datasets.ImageFolder(root + 'dataset/compare', transform=test_compare_transforms)
+    compare = torchvision.datasets.ImageFolder(root + 'dataset/BSDS200', transform=test_compare_transforms)
 
     test_loader_bsds = DataLoader(test_bsds, batch_size=1, shuffle=True, **kwopt, drop_last=False)
     test_loader_set5 = DataLoader(test_set5, batch_size=1, shuffle=True, **kwopt, drop_last=False)

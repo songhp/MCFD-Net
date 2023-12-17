@@ -1,4 +1,5 @@
 import argparse
+import random
 import warnings
 import model.mcfd as mcfd
 from loss import *
@@ -16,7 +17,7 @@ def count_parameters(model):
 
 def main():
     global args, model
-    setup_seed(1)
+    setup_seed(random.randint(1, 100))
     if not os.path.exists(args.save_dir):
         os.makedirs(args.save_dir)
         torch.backends.cudnn.benchmark = True
