@@ -2,7 +2,7 @@
 Heping Song, Jingyao Gong, Hongying Meng, Yuping Lai. 
 Multi-Cross Sampling and Frequency-Division Reconstruction for Image Compressed Sensing. 
 AAAI 2024.
-
+[![Downloads](https://github.com/songhp/MCFD-Net)](https://github.com/songhp/MCFD-Net)
 ## Abstract
 
 Existing CS methods use simple convolutional downsampling and only refer to low-level information in the reconstruction optimization in the information domain, making it difﬁcult to utilize high-level features of the original signal. In deep reconstruction,they ignore the different importance of distinguishing high- and low-frequency information. 
