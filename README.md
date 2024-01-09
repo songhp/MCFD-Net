@@ -1,10 +1,9 @@
 # MCFD-Net
 Heping Song, Jingyao Gong, Hongying Meng, Yuping Lai. 
+
 Multi-Cross Sampling and Frequency-Division Reconstruction for Image Compressed Sensing. 
-AAAI 2024.
 
-![Visitor Count](https://profile-counter.glitch.me/mcfdnet/count.svg)
-
+[AAAI 2024. PDF](https://github.com/songhp/MCFD-Net/blob/main/MCFDnet2024AAAI.pdf)
 
 ## Abstract
 
@@ -76,8 +75,11 @@ If you have any question, please email [gongjy@stmail.ujs.edu.cn](mailto:gongjy@
 
 ## Acknowledgements
 [TIP-CSNet](https://github.com/wzhshi/TIP-CSNet)
+
 [RK-CCSNet](https://github.com/rkteddy/RK-CCSNet)
+
 [FSOINet](https://github.com/cwjjun/fsoinet)
+
 [MR-CCSNet](https://github.com/fze0012/MR-CCSNet)
 
 
