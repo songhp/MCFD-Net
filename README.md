@@ -3,7 +3,7 @@ Heping Song, Jingyao Gong, Hongying Meng, Yuping Lai.
 
 Multi-Cross Sampling and Frequency-Division Reconstruction for Image Compressed Sensing. 
 
-[AAAI 2024. PDF](https://github.com/songhp/MCFD-Net/blob/main/MCFDNet-AAAI2024.pdf)
+Our paper can be found in: [MCFD_Net(AAAI-2024)](https://ojs.aaai.org/index.php/AAAI/article/view/28294)
 
 ## Abstract
 
@@ -11,13 +11,18 @@ Existing CS methods use simple convolutional downsampling and only refer to low-
 To address the above issues, we propose MCFD Net, which employs a series of clever methods through experiments show that MCFD-Net signiﬁcantly outperforms state of-the-art CS methods in multiple benchmark datasets while achieving better noise robustness.
 
 
+## Overview
+Our poster in the conference of AAAI 2024:
+![poster](md_image/poster.png)
+
+
 ## Network Architecture
-![img.png](md_image/structure.png)
+![structure](md_image/structure.png)
 
 ## Requirements (recommend)
-- Python == 3.10.9
-- Pytorch == 1.13.0
-- Numpy == 1.16.4
+- Python >= 3.9
+- Pytorch >= 1.13
+- Numpy >= 1.16
 
 
 ## Datasets
@@ -59,19 +64,31 @@ python train_mcfd.py
 
 ### Quantitative Results
 
-![psnr_ssim](md_image/tables.png)
-![psnr_ssim](md_image/pre_com.png)
+![tables](md_image/tables.png)
+![pre_com](md_image/pre_com.png)
 
 
 
 ### Comparison of noise resistance performance
 
-![vision](md_image/noise_com.png)
+![noise_com](md_image/noise_com.png)
 
 
 ## Contact
 If you have any question, please email [gongjy@stmail.ujs.edu.cn](mailto:gongjy@stmail.ujs.edu.cn).
 
+
+## Citation
+
+If you find the code helpful in your research or work, please cite the following paper:
+```
+@article{song2024multi,
+  title={Multi-Cross Sampling and Frequency-Division Reconstruction for Image Compressed Sensing},
+  author={Song, Heping and Gong, Jingyao and Meng, Hongying and Lai, Yuping},
+  year={2024},
+  publisher={Association for the Advancement of Artificial Intelligence}
+}
+```
 
 ## Acknowledgements
 [TIP-CSNet](https://github.com/wzhshi/TIP-CSNet)
@@ -81,17 +98,3 @@ If you have any question, please email [gongjy@stmail.ujs.edu.cn](mailto:gongjy@
 [FSOINet](https://github.com/cwjjun/fsoinet)
 
 [MR-CCSNet](https://github.com/fze0012/MR-CCSNet)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
