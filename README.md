@@ -63,6 +63,7 @@ python train_mcfd.py
 ## Results
 
 ### Quantitative Results
+> Retest on July 2, 2024, (method *) compared to the newly added method
 
 ![tables](md_image/tables.png)
 ![pre_com](md_image/pre_com.png)
